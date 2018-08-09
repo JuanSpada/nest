@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.grilla{
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: auto auto auto;
+}
+header{
+    background-color: red;
+    grid-column: 1/4;
+}
+header>button{
+    grid-column-start; 2;
+}
+footer{
+    grid-column: 1/4;
+}

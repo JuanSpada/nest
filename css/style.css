@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 14px;
+}
+
+/*Estilos del Slider Principal*/
+.slider-principal{
+    background-image: url(../img/slider-principal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+}
+.slider-principal>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(31, 31, 31, 0.6);
+}
+.slider-principal>div>article>h1{
+    margin: 0 0 10px;
+    font-size: 3.5em;
+    opacity: 1;
+}
+.slider-principal>div>article>h2{
+    margin: 0;
+    font-size: 2.2em;
+}
+.slider-principal>div>article>p{
+    margin: 0;
+    font-size: 1.3em;
+}
+
+
+/*Estilos de Servicios*/
+#tabServicios{
+    margin-top: 20px;
+}
+#contenidoTabServicios{
+    min-height: 300px; /*SACAR DESPUES*/
+}
+/*Estilos de Proyectos*/
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.proyectos>article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 25%;
+    outline: none;
+    height: 300px;
+    min-width: 300px;
+}
+.proyectos>article>div:hover{
+    opacity: 1;
+}
+.proyectos>article>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: rgba(31, 31, 31, 0.9);
+}
+.proyectos>article>div>h1{
+    margin: 2px;
+    font-size: 2em;
+}
+.proyecto1{
+    background-image: url(../img/proyectos/boardingpet.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+.proyecto2{
+    background-image: url(../img/proyectos/contagram.png);
+    background-size: cover;
+    background-position: center;
+    outline: none;
+}
+.proyecto3{
+    background-image: url(../img/proyectos/covadem.png);
+    background-size: cover;
+    background-position: center;
+    outline: none;
+}
+.proyecto4{
+    background-image: url(../img/proyectos/estilosillas.png);
+    background-size: cover;
+    background-position: center;
+}
+.proyecto5{
+    background-image: url(../img/proyectos/gifty.png);
+    background-size: cover;
+    background-position: center;
+}
+.proyecto6{
+    background-image: url(../img/proyectos/volkswagen.png);
+    background-size: cover;
+    background-position: center;
+}
+.proyecto7{
+    background-image: url(../img/proyectos/chequesgram.png);
+    background-size: cover;
+    background-position: center;
+}
+.proyecto8{
+    background-image: url(../img/proyectos/covadem.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Estilos del banner de texto*/
+.banner-texto{
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+    background-color: red;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-texto>article>p{
+    margin: 0;
+}

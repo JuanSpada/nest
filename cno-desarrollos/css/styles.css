@@ -1,0 +1,705 @@
+*{box-sizing: border-box;}
+
+html{
+    
+}
+
+header{
+    font-family: Montserrat, sans-serif; 
+    background: #fff;
+}
+
+h6{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+h5{
+    font-family: Raleway, sans-serif;
+}
+
+h3{
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 0;
+
+}
+
+h2{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    color: #303030;
+}
+
+p{
+    font-family: Montserrat, sans-serif;
+    color: #606060;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+li{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+/* Animation Start*/
+@keyframes fadeInUp{
+    from{
+        transform: translate3d(0,40px,0);
+    }
+
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp{
+    from{
+        transform: translate3d(0,40px,0);
+    }
+
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s ;
+    -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp{
+    opacity: 0;
+}
+
+.fadeInUp{
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/* Animation End */
+
+/* Header Start*/
+.header-area{
+    z-index: 10;
+    position: relative;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    padding: 20px 0;
+}
+
+.logo img{
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+.company-info{
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.company-info-item{
+    float: left;
+    overflow: hidden;
+    width: 50%;
+}
+
+.company-info-item .icon{
+    float: left;
+    width: 20%;
+}
+
+.company-info-item .icon img{
+    width: 50%;
+}
+
+.company-info-item .info{
+    float: left;
+    width: 80%;
+}
+
+.info h6{
+    margin-bottom: 0;
+}
+
+.info p{
+    color: #606060;
+    font-size:12px;
+    font-weight: 300;
+    line-height: 12px;
+    margin-bottom: 0;
+}
+
+.transparent-header{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    background: rgba(99, 19, 18,0.9) none repeat scroll 0 0;
+    transition: all 0.3s ease 0s;
+}
+/* Header End*/
+
+/* Sticky Header start*/
+.transparent-header.sticky{
+    background: rgba(255,255,255,1);
+    box-shadow: 1px 3px rgba(50,50,50,0.4);
+}
+
+.sticky{
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky .sticky-logo img{
+    display: block;
+    float: left;
+    padding: 8px 0;
+    width: 100px;
+}
+
+.sticky .main-menu{
+    text-align: right;
+    margin-top: 21px;
+}
+
+.sticky .main-menu li a{
+    color: #303030;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.sticky .main-menu li a:hover, .sticky .main-menu li a:active{
+    color: rgb(99, 19, 18);
+}
+
+.header-stick{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    background: rgba(99, 19, 18,0.9);
+}
+
+.sticky-logo img{
+    display: none;
+    transition: all 0.3s ease 0s;
+}
+
+.drop-menu{
+    position: relative;
+}
+
+.drop-menu .row [class*="col-"]{
+    position: static;
+}
+
+#primary-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin:0;
+    padding-inline-start: 0;
+    text-align: center;
+}
+
+.main-menu li{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.main-menu li a{
+    display: block;
+    font-size: 16px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.main-menu li a:hover, .main-menu li a:active{
+    color: lightgrey;
+    text-decoration: none;
+}
+/* Sticky Header end*/
+
+/* Mobile Menu start*/
+.mobile-menu-area{
+    background: rgba(99,19,18,0.9);
+    font-family: Montserrat, sans-serif;
+}
+
+.mean-container .mean-bar{
+    box-sizing: content-box;
+    background: transparent none repeat scroll 0 0;
+    float: left;
+    min-height: 42px;
+    padding: 4px 0 0;
+    position: relative;
+    width: 70%;
+    z-index: 999999;
+    top: 6px;
+}
+
+.mean-container .mean-bar::after{
+    color: #fff;
+    content: 'MENU';
+    font-size: 16px;
+    position: absolute;
+}
+
+.mean-bar a.meanmenu-reveal{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    text-indent: -9999em;
+    line-height: 22px;
+    font-size: 1px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    float: right;
+}
+
+.mean-bar .meanmenu-reveal span{
+    display: block;
+    background: #fff;
+    height: 3px;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.mean-bar .mean-nav{
+    float: left;
+    width: 100%;
+    background: transparent;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.mean-bar .mean-nav ul{
+    padding-inline-start: 0;
+}
+
+.mean-bar .mean-nav ul li{
+    background: #f8f8f8 none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.mean-bar .mean-nav ul li a{
+    background: #f8f8f8 none repeat scroll 0 0;
+    color: grey;
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin: 0;
+    padding: 1em 5%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 400;
+}
+
+/* Mobile Menu end */
+
+/* Slider start*/
+.bg-opacity-black-40::before{
+    background: rgba(0,0,0,0.5);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-3{
+    background-attachment: fixed;
+    background-clip: initial;
+    background-color: rgba(0,0,0,0);
+    background-origin: top;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    background-image: url('../images/header.jpg');
+}
+
+.slider{
+    overflow: hidden;
+    padding: 130px 0 75px;
+}
+
+.fadeInUp{
+    visibility: visible;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: fadeInUp;
+}
+
+.find-home-box{
+    border-bottom: 4px solid rgb(99, 19, 18);
+    margin-left: 20%;
+    width: 440px;
+    background: rgba(50,50,50,0.7);
+    padding: 26px 30px 20px;
+}
+
+.find-home-box .section-title{
+    margin-bottom: 42px;
+    font-family: Montserrat, sans-serif;
+}
+
+.find-home-box .section-title h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.find-home-box .section-title h3{
+    color: #fff;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.find-home-box .section-title h5{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.find-home-box .find-home{
+    margin: auto;
+    width: calc(100% - 0px);
+}
+
+.find-home-box .find-home-item{
+    margin-bottom: 30px;
+}
+
+.find-home-box .find-home-item input{
+    width: 100%;
+    color: #fff;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 1px solid #e1e1e1;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.button{
+    border: none;
+    font-family: Montserrat, sans-serif;
+    background: rgb(99, 19, 18) none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 18px;
+    text-align: center;
+}
+/* Slider end */
+
+/* Page Content start */
+.about-area{
+    margin-top: 70px;
+}
+
+.about-area .about-title{
+    margin-bottom: 30px;
+}
+
+.about-area .about-info span{
+    cursor: help;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about-image{
+    transition: all 0.3s ease 0s;
+}
+
+.about-image img{
+    width: 100%;
+}
+
+.about-info .author-quote strong{
+    font-weight: bold;
+}
+
+.about-info .author-quote p{
+    padding-left: 30px;
+    position: relative;
+}
+
+.about-info .author-quote p::before{
+    content: "\f046";
+    font-family: fontawesome;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.services-area{
+    padding-top: 115px;
+}
+
+.services-area .section-title{
+    margin-bottom: 55px;
+}
+
+.services-area .section-title h2{
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.services-area .service-carousel{
+    width: 100%;
+}
+
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.slick-track{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.service-item{
+    margin-bottom: 60px;
+}
+
+.service-item .service-image img{
+    width: 100%;
+    display: block;
+}
+
+.service-item .service-info{
+    background: #f5f5f5 none repeat scroll 0 0;
+    padding: 26px 15px 10px;
+}
+
+.service-item .service-info h5{
+    text-align: center;
+    font-weight: 600;
+    color: #303030;
+}
+
+.features-area{
+    background: #f5f5f5 url("http://avalon3.com/a-invest/images/others/features.jpg") no-repeat scroll 0 0;
+    overflow: hidden;
+}
+
+.features-area .features-info{
+    padding: 60px 130px 45px 50px;
+    position: relative;
+    background: #f5f5f5;
+}
+
+.features-area .features-info::before{
+    border-bottom: 532px solid #f5f5f5;
+    border-left: 200px solid transparent;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    z-index: 0;
+}
+
+.features-include-list h6{
+    font-weight: bold;
+}
+
+.featured-flat-area{
+    text-align: center;
+    padding-top: 115px;
+    padding-bottom: 80px;
+}
+
+.featured-flat .properties img{
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.footer-area{
+    background-attachment: inherit;
+}
+
+.bg-2{
+    background-color: rgba(0,0,0,0);
+    background-clip: initial;
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    background-image: url('../images/header2.jpg');
+}
+
+.bg-opacity-black-90::before{
+    background: rgba(0,0,0,0.9);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.footer-top{
+    padding-top: 110px;
+    padding-bottom: 80px;
+}
+
+.footer-top .footer-title{
+    color: #fefefe;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.footer-top .footer-address{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-top .footer-address li{
+    list-style: none;
+    padding-inline-start: 0;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.footer-top .footer-address li + li{
+    padding-top: 15px;
+}
+
+.footer-top .footer-address .address-icon{
+    float: left;
+    width: 15%;
+}
+
+.footer-top .footer-address .address-info{
+    float: left;
+    width: 85%;
+}
+
+.footer-top .footer-address .address-info span{
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #ccc;
+}
+
+.footer-top .footer-widget.middle{
+    margin: auto;
+    width: calc(100% - 100px);
+}
+
+.footer-top .footer-widget.middle .footer-title{
+    padding-left: 40px;
+}
+
+.footer-top .footer-lastest-news li{
+    overflow: hidden;
+}
+
+.footer-top .footer-lastest-news li + li{
+    padding-top: 30px;
+}
+
+.footer-top .lastest-news-image{
+    float: left;
+    width: 18%;
+}
+
+.footer-top .lastest-news-image img{
+    width: 100%;
+}
+
+.footer-top .lastest-news-info{
+    float: left;
+    width: 82%;
+    padding-left: 20px;
+}
+
+.footer-top .lastest-news-info h6{
+    color: #c7c7c7;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.footer-top .lastest-news-info p{
+    color: #ccc;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+/* Page Content end */
+
+@media (max-width: 767px){
+    .sticky{
+        display: none;
+    }
+    .slider{
+        padding: 80px 20px;
+    }
+
+    .find-home-box{
+        margin-left:0;
+        width: 100%;
+    }
+}

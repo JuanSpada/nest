@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Eximgroup</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button">Search</button> </form>
+		</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<div class="header_v1_wrapper ds darkblue_gradient background_cover">
+				<section class="page_toplogo toplogo_v1 ds blue_gradient section_padding_top_10 section_padding_bottom_10 columns_margin_0">
+					<div class="container-fluid">
+						<div class="row flex-wrap v-center">
+							<div class="col-xs-12 col-md-3 text-center text-md-left"> <a href="./" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a> </div>
+							<div class="col-xs-12 col-md-9 text-center text-md-right">
+								<div class="inline-content with_dividers darklinks">
+									<div>
+										<div class="inline-content"> <span class="hidden-md">
+                                <i class="tmi-map-marker highlight2 rightpadding_5" aria-hidden="true"></i>
+                                121 King Street,  Melbourne, Australia
+                            </span> <span>
+                                <i class="tmi-envelope highlight2 rightpadding_5" aria-hidden="true"></i>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </span> </div>
+									</div>
+									<div> <span class="big">800.567.1234</span> </div>
+									<div> <a href="#" class="search_modal_button header-button">
+                            <i class="tmi-search"></i>
+                        </a> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<header class="page_header header_darkgrey darkblue_gradient relative_toggler">
+					<div class="container-fluid">
+						<div class="row flex-wrap v-center">
+							<div class="col-xs-12 col-sm-3 col-lg-8 text-center text-sm-left">
+								<div class="header_mainmenu">
+									<!-- main nav start -->
+									<nav class="mainmenu_wrapper">
+										<ul class="mainmenu nav sf-menu">
+											<li class="active"> <a href="index.html"><span>Home</span></a>
+												<ul>
+													<li> <a href="index.html"><span>Home</span></a> </li>
+													<li> <a href="index-static.html"><span>Home Static</span></a> </li>
+													<li> <a href="index-single.html"><span>Home Single Page</span></a> </li>
+												</ul>
+											</li>
+											<li> <a href="about.html"><span>Pages</span></a>
+												<ul>
+													<!-- features -->
+													<li> <a href="shortcodes_teasers.html"><span>Shortcodes &amp; Widgets</span></a>
+														<ul>
+															<li> <a href="shortcodes_typography.html"><span>Typography</span></a> </li>
+															<li> <a href="shortcodes_buttons.html"><span>Buttons</span></a> </li>
+															<li> <a href="shortcodes_teasers.html"><span>Teasers</span></a> </li>
+															<li> <a href="shortcodes_progress.html"><span>Progress</span></a> </li>
+															<li> <a href="shortcodes_tabs.html"><span>Tabs &amp; Collapse</span></a> </li>
+															<li> <a href="shortcodes_bootstrap.html"><span>Bootstrap Elements</span></a> </li>
+															<li> <a href="shortcodes_widgets.html"><span>Widgets</span></a> </li>
+															<li> <a href="shortcodes_animation.html"><span>Animation</span></a> </li>
+															<li> <a href="shortcodes_icons.html"><span>Template Icons</span></a> </li>
+															<li> <a href="shortcodes_socialicons.html"><span>Social Icons</span></a> </li>
+														</ul>
+													</li>
+													<!-- eof features -->
+													<li> <a href="about.html"><span>About</span></a> </li>
+													<li> <a href="team.html"><span>Team</span></a> </li>
+													<li> <a href="partners.html"><span>Partners</span></a> </li>
+													<li> <a href="timetable.html"><span>Timetable</span></a> </li>
+													<!-- events -->
+													<li> <a href="events-left.html"><span>Events</span></a>
+														<ul>
+															<li> <a href="events-left.html"><span>Left Sidebar</span></a> </li>
+															<li> <a href="events-right.html"><span>Right Sidebar</span></a> </li>
+															<li> <a href="events-full.html"><span>Full Width</span></a> </li>
+															<li> <a href="event-single-left.html"><span>Single Event</span></a>
+																<ul>
+																	<li> <a href="event-single-left.html"><span>Left Sidebar</span></a> </li>
+																	<li> <a href="event-single-right.html"><span>Right Sidebar</span></a> </li>
+																	<li> <a href="event-single-full.html"><span>Full Width</span></a> </li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<!-- eof events -->
+													<li> <a href="comingsoon1.html"><span>Comingsoon</span></a>
+														<ul>
+															<li> <a href="comingsoon1.html"><span>Comingsoon</span></a> </li>
+															<li> <a href="comingsoon2.html"><span>Comingsoon 2</span></a> </li>
+														</ul>
+													</li>
+													<li> <a href="faq.html"><span>FAQ</span></a>
+														<ul>
+															<li> <a href="faq.html"><span>FAQ</span></a> </li>
+															<li> <a href="faq2.html"><span>FAQ 2</span></a> </li>
+															<li> <a href="faq3.html"><span>FAQ 3</span></a> </li>
+														</ul>
+													</li>
+													<li> <a href="404.html"><span>404</span></a>
+														<ul>
+															<li> <a href="404.html"><span>404</span></a> </li>
+															<li> <a href="4042.html"><span>404 2</span></a> </li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<!-- eof pages -->
+											<li> <a href="services.html"><span>Services</span></a> </li>
+											<li> <a href="#"><span>Features</span></a>
+												<div class="mega-menu">
+													<ul class="mega-menu-row">
+														<li class="mega-menu-col"> <a href="#"><span>Headers</span></a>
+															<ul>
+																<li> <a href="header1.html"><span>Header Type 1</span></a> </li>
+																<li> <a href="header2.html"><span>Header Type 2</span></a> </li>
+																<li> <a href="header3.html"><span>Header Type 3</span></a> </li>
+																<li> <a href="header4.html"><span>Header Type 4</span></a> </li>
+																<li> <a href="header5.html"><span>Header Type 5</span></a> </li>
+																<li> <a href="header6.html"><span>Header Type 6</span></a> </li>
+																<li> <a href="header7.html"><span>Header Type 7</span></a> </li>
+															</ul>
+														</li>
+														<li class="mega-menu-col"> <a href="#"><span>Side Menus</span></a>
+															<ul>
+																<li> <a href="header_side1.html"><span>Slide Left Light</span></a> </li>
+																<li> <a href="header_side2.html"><span>Slide Right Light</span></a> </li>
+																<li> <a href="header_side3.html"><span>Push Left Light</span></a> </li>
+																<li> <a href="header_side4.html"><span>Push Right Light</span></a> </li>
+																<li> <a href="header_side5.html"><span>Slide Left Dark</span></a> </li>
+																<li> <a href="header_side6.html"><span>Slide Right Dark</span></a> </li>
+																<li> <a href="header_side7.html"><span>Push Left Dark</span></a> </li>
+																<li> <a href="header_side8.html"><span>Push Right Dark</span></a> </li>
+																<li> <a href="header_side_superfish.html"><span>Superfish Menu</span></a> </li>
+																<li> <a href="header_side_sticked.html"><span>Sticked Menu</span></a> </li>
+															</ul>
+														</li>
+														<li class="mega-menu-col"> <a href="breadcrumbs1.html"><span>Breadcrumbs</span></a>
+															<ul>
+																<li> <a href="breadcrumbs1.html"><span>Breadcrumbs 1</span></a> </li>
+																<li> <a href="breadcrumbs2.html"><span>Breadcrumbs 2</span></a> </li>
+																<li> <a href="breadcrumbs3.html"><span>Breadcrumbs 3</span></a> </li>
+																<li> <a href="breadcrumbs4.html"><span>Breadcrumbs 4</span></a> </li>
+																<li> <a href="breadcrumbs5.html"><span>Breadcrumbs 5</span></a> </li>
+																<li> <a href="breadcrumbs6.html"><span>Breadcrumbs 6</span></a> </li>
+															</ul>
+														</li>
+														<li class="mega-menu-col"> <a href="footer1.html"><span>Footers</span></a>
+															<ul>
+																<li> <a href="footer1.html"><span>Footer Type 1</span></a> </li>
+																<li> <a href="footer2.html"><span>Footer Type 2</span></a> </li>
+																<li> <a href="footer3.html"><span>Footer Type 3</span></a> </li>
+																<li> <a href="footer4.html"><span>Footer Type 4</span></a> </li>
+																<li> <a href="footer5.html"><span>Footer Type 5</span></a> </li>
+															</ul>
+														</li>
+														<li class="mega-menu-col"> <a href="copyright1.html"><span>Copyrights</span></a>
+															<ul>
+																<li> <a href="copyright1.html"><span>Copyrights 1</span></a> </li>
+																<li> <a href="copyright2.html"><span>Copyrights 2</span></a> </li>
+																<li> <a href="copyright3.html"><span>Copyrights 3</span></a> </li>
+																<li> <a href="copyright4.html"><span>Copyrights 4</span></a> </li>
+																<li> <a href="copyright5.html"><span>Copyrights 5</span></a> </li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<!-- eof mega menu -->
+											</li>
+											<!-- eof features -->
+											<!-- blog -->
+											<li> <a href="blog-right.html"><span>Blog</span></a>
+												<ul>
+													<li> <a href="blog-right.html"><span>Right Sidebar</span></a> </li>
+													<li> <a href="blog-left.html"><span>Left Sidebar</span></a> </li>
+													<li> <a href="blog-full.html"><span>No Sidebar</span></a> </li>
+													<li> <a href="blog-mosaic.html"><span>Blog Grid</span></a> </li>
+													<li> <a href="blog-single-right.html"><span>Post</span></a>
+														<ul>
+															<li> <a href="blog-single-right.html"><span>Right Sidebar</span></a> </li>
+															<li> <a href="blog-single-left.html"><span>Left Sidebar</span></a> </li>
+															<li> <a href="blog-single-full.html"><span>No Sidebar</span></a> </li>
+														</ul>
+													</li>
+													<li> <a href="blog-single-video-right.html"><span>Video Post</span></a>
+														<ul>
+															<li> <a href="blog-single-video-right.html"><span>Right Sidebar</span></a> </li>
+															<li> <a href="blog-single-video-left.html"><span>Left Sidebar</span></a> </li>
+															<li> <a href="blog-single-video-full.html"><span>No Sidebar</span></a> </li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<!-- eof blog -->
+											<!-- gallery -->
+											<li> <a href="gallery-regular.html"><span>Gallery</span></a>
+												<ul>
+													<!-- Gallery regular -->
+													<li> <a href="gallery-regular.html"><span>Gallery Regular</span></a>
+														<ul>
+															<li> <a href="gallery-regular.html"><span>1 column</span></a> </li>
+															<li> <a href="gallery-regular-2-cols.html"><span>2 columns</span></a> </li>
+															<li> <a href="gallery-regular-3-cols.html"><span>3 columns</span></a> </li>
+														</ul>
+													</li>
+													<!-- eof Gallery regular -->
+													<!-- Gallery full width -->
+													<li> <a href="gallery-fullwidth.html"><span>Gallery Full Width</span></a>
+														<ul>
+															<li> <a href="gallery-fullwidth.html"><span>2 column</span></a> </li>
+															<li> <a href="gallery-fullwidth-3-cols.html"><span>3 columns</span></a> </li>
+															<li> <a href="gallery-fullwidth-4-cols.html"><span>4 columns</span></a> </li>
+														</ul>
+													</li>
+													<!-- eof Gallery full width -->
+													<!-- Gallery extended -->
+													<li> <a href="gallery-extended.html"><span>Gallery Extended</span></a>
+														<ul>
+															<li> <a href="gallery-extended.html"><span>1 column</span></a> </li>
+															<li> <a href="gallery-extended-2-cols.html"><span>2 columns</span></a> </li>
+															<li> <a href="gallery-extended-3-cols.html"><span>3 columns</span></a> </li>
+														</ul>
+													</li>
+													<!-- eof Gallery extended -->
+													<!-- Gallery carousel -->
+													<li> <a href="gallery-carousel.html"><span>Gallery Carousel</span></a>
+														<ul>
+															<li> <a href="gallery-carousel.html"><span>1 column</span></a> </li>
+															<li> <a href="gallery-carousel-2-cols.html"><span>2 columns</span></a> </li>
+															<li> <a href="gallery-carousel-3-cols.html"><span>3 columns</span></a> </li>
+														</ul>
+													</li>
+													<!-- eof Gallery carousel -->
+													<!-- Gallery tile -->
+													<li> <a href="gallery-tile.html"><span>Gallery Tile</span></a> </li>
+													<!-- eof Gallery tile -->
+													<!-- Gallery left sidebar -->
+													<li> <a href="gallery-left.html"><span>Gallery Left Sidebar</span></a>
+														<ul>
+															<li> <a href="gallery-left.html"><span>1 column</span></a> </li>
+															<li> <a href="gallery-left-2-cols.html"><span>2 columns</span></a> </li>
+														</ul>
+													</li>
+													<!-- eof Gallery left sidebar -->
+													<!-- Gallery right sidebar -->
+													<li> <a href="gallery-right.html"><span>Gallery Right Sidebar</span></a>
+														<ul>
+															<li> <a href="gallery-right.html"><span>1 column</span></a> </li>
+															<li> <a href="gallery-right-2-cols.html"><span>2 columns</span></a> </li>
+														</ul>
+													</li>
+													<!-- eof Gallery right sidebar -->
+													<!-- Gallery item -->
+													<li> <a href="gallery-single.html"><span>Gallery Item</span></a>
+														<ul>
+															<li> <a href="gallery-single.html"><span>Style 1</span></a> </li>
+															<li> <a href="gallery-single2.html"><span>Style 2</span></a> </li>
+															<li> <a href="gallery-single3.html"><span>Style 3</span></a> </li>
+															<li> <a href="gallery-single4.html"><span>Style 4</span></a> </li>
+														</ul>
+													</li>
+													<!-- eof Gallery item -->
+												</ul>
+											</li>
+											<!-- eof Gallery -->
+											<!-- contacts -->
+											<li> <a href="contact.html"><span>Contact</span></a>
+												<ul>
+													<li> <a href="contact.html"><span>Contact 1</span></a> </li>
+													<li> <a href="contact2.html"><span>Contact 2</span></a> </li>
+													<li> <a href="contact3.html"><span>Contact 3</span></a> </li>
+													<li> <a href="contact4.html"><span>Contact 4</span></a> </li>
+												</ul>
+											</li>
+											<!-- eof contacts -->
+										</ul>
+									</nav>
+									<!-- eof main nav -->
+									<!-- header toggler --><span class="toggle_menu"><span></span></span>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-9 col-lg-4 text-center text-sm-right page_breadcrumbs">
+								<h1 class="highlight2">Right Sidebar</h1>
+								<ol class="breadcrumb darklinks">
+									<li> <a href="./">
+                            Home
+                        </a> </li>
+									<li> <a href="#">Events</a> </li>
+									<li class="active"> <span>Right Sidebar</span> </li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</header>
+			</div>
+			<section class="ls section_padding_top_130 section_padding_bottom_130 columns_padding_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-lg-8">
+							<article class="post event-item side-item side-sm content-padding with_background">
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="item-media"> <img src="images/gallery-square/01.jpg" alt=""> <a class="abs-link" title="" href="event-single-right.html"></a> </div>
+									</div>
+									<div class="col-sm-7">
+										<div class="item-content">
+											<header class="entry-header">
+												<div class="entry-meta small-text">
+													<div class="grey"> <time datetime="2017-10-03T08:50:40+00:00">20 june, 2018 8:00 am</time> </div>
+													<div class="highlight"> 7236 Cherry Street Vista, CA 92083 </div>
+												</div>
+												<h3 class="entry-title small"> <a href="event-single-right.html">Hinc Zril Admodum Mea Qui Has Impetus</a> </h3>
+											</header>
+											<div class="content-3lines-ellipsis">
+												<p>Proin sed placerat justo, iaculis mattis ligula. Suspendisse vitae risus urna. Suspendisse nec laoreet justo. Etiam in nunc ullamcorper, dapibus dui ac, ullamcorper nisl. Duis sollicitudin cursus enim, nec ultricies nisi tincidunt id. Fusce
+													mattis, erat non dapibus tempus, arcu justo tincidunt ipsum, id bibendum nunc dolor ac lorem.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="post event-item side-item side-sm content-padding with_background">
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="item-media"> <img src="images/gallery-square/02.jpg" alt=""> <a class="abs-link" title="" href="event-single-right.html"></a> </div>
+									</div>
+									<div class="col-sm-7">
+										<div class="item-content">
+											<header class="entry-header">
+												<div class="entry-meta small-text">
+													<div class="grey"> <time datetime="2017-10-03T08:50:40+00:00">21 june, 2018  9:00 am</time> </div>
+													<div class="highlight">971 Broad St. Sylmar, CA 91342</div>
+												</div>
+												<h3 class="entry-title small"> <a href="event-single-right.html">Sed diam et dolore magna</a> </h3>
+											</header>
+											<div class="content-3lines-ellipsis">
+												<p>Curabitur imperdiet, sapien eu molestie fermentum, dolor mi posuere metus, non euismod sem massa nec orci. Donec sit amet pretium dui, id imperdiet lorem. Nulla volutpat lobortis arcu, sed iaculis turpis consectetur in. Morbi maximus elementum
+													risus vitae venenatis. Cras orci ipsum, euismod vel ullamcorper in, aliquet et eros.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="post event-item side-item side-sm content-padding with_background">
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="item-media"> <img src="images/gallery-square/03.jpg" alt=""> <a class="abs-link" title="" href="event-single-right.html"></a> </div>
+									</div>
+									<div class="col-sm-7">
+										<div class="item-content">
+											<header class="entry-header">
+												<div class="entry-meta small-text">
+													<div class="grey"> <time datetime="2017-10-03T08:50:40+00:00">22 june, 2018  10:00 am</time> </div>
+													<div class="highlight">7294 Glen Eagles St. Oxnard, CA 93033</div>
+												</div>
+												<h3 class="entry-title small"> <a href="event-single-right.html">Consetetur sadipscing elitr</a> </h3>
+											</header>
+											<div class="content-3lines-ellipsis">
+												<p>Maecenas vitae tellus et velit sagittis ornare. Nunc fermentum metus at augue tempus mollis. Integer urna augue, auctor quis sodales euismod, finibus sed ipsum. Nulla facilisi. In feugiat nisi mi, in aliquet purus tempus id. Vivamus nec lorem
+													orci.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="post event-item side-item side-sm content-padding with_background">
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="item-media"> <img src="images/gallery-square/04.jpg" alt=""> <a class="abs-link" title="" href="event-single-right.html"></a> </div>
+									</div>
+									<div class="col-sm-7">
+										<div class="item-content">
+											<header class="entry-header">
+												<div class="entry-meta small-text">
+													<div class="grey"> <time datetime="2017-10-03T08:50:40+00:00">23 june, 2018  11:00 am</time> </div>
+													<div class="highlight">27 Bradford Street Fontana, CA 92336</div>
+												</div>
+												<h3 class="entry-title small"> <a href="event-single-right.html">Diam et dolore magna aliquyam</a> </h3>
+											</header>
+											<div class="content-3lines-ellipsis">
+												<p>Duis rhoncus metus non nisl aliquam laoreet. Pellentesque ultrices id ex nec cursus. Maecenas et venenatis est. Maecenas tempor libero non luctus elementum. Praesent nisi ligula, pharetra at convallis ac, sollicitudin vitae enim. Sed eu dui
+													tristique, ornare nunc nec, vestibulum urna. Aenean porttitor dolor non rutrum lobortis.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="post event-item side-item side-sm content-padding with_background">
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="item-media"> <img src="images/gallery-square/05.jpg" alt=""> <a class="abs-link" title="" href="event-single-right.html"></a> </div>
+									</div>
+									<div class="col-sm-7">
+										<div class="item-content">
+											<header class="entry-header">
+												<div class="entry-meta small-text">
+													<div class="grey"> <time datetime="2017-10-03T08:50:40+00:00">24 june, 2018  12:00 am</time> </div>
+													<div class="highlight">548 Primrose Drive Hayward, CA 94544</div>
+												</div>
+												<h3 class="entry-title small"> <a href="event-single-right.html">Sadipscing elitr sed diam</a> </h3>
+											</header>
+											<div class="content-3lines-ellipsis">
+												<p>Nam et ipsum ut nisl tristique scelerisque eget sed metus. In pellentesque arcu in felis pretium vehicula. Etiam vestibulum eleifend dignissim. Nam varius mauris lacinia tristique ultricies. Vivamus vel est purus. Quisque lacinia sagittis
+													mattis. Proin aliquam libero vel enim tincidunt, vel interdum metus fringilla.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="post event-item side-item side-sm content-padding with_background">
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="item-media"> <img src="images/gallery-square/06.jpg" alt=""> <a class="abs-link" title="" href="event-single-right.html"></a> </div>
+									</div>
+									<div class="col-sm-7">
+										<div class="item-content">
+											<header class="entry-header">
+												<div class="entry-meta small-text">
+													<div class="grey"> <time datetime="2017-10-03T08:50:40+00:00">25 june, 2018  1:00 pm</time> </div>
+													<div class="highlight">30 Lake Forest Road Folsom, CA 95630</div>
+												</div>
+												<h3 class="entry-title small"> <a href="event-single-right.html">Ipsum dolor sit amet consetetur</a> </h3>
+											</header>
+											<div class="content-3lines-ellipsis">
+												<p>Vestibulum tincidunt arcu at dolor sodales, eu accumsan nunc blandit. Aliquam erat volutpat. Donec vel est interdum dolor vehicula feugiat. Fusce elementum sapien a fermentum tincidunt. Nam auctor urna erat, vel lobortis nunc commodo ac. Integer
+													in tellus vel augue fringilla lacinia at eu risus.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="post event-item side-item side-sm content-padding with_background">
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="item-media"> <img src="images/gallery-square/07.jpg" alt=""> <a class="abs-link" title="" href="event-single-right.html"></a> </div>
+									</div>
+									<div class="col-sm-7">
+										<div class="item-content">
+											<header class="entry-header">
+												<div class="entry-meta small-text">
+													<div class="grey"> <time datetime="2017-10-03T08:50:40+00:00">26 june, 2018  2:00 pm</time> </div>
+													<div class="highlight">13 Clay Court Fresno, CA 93727</div>
+												</div>
+												<h3 class="entry-title small"> <a href="event-single-right.html">Magna aliquyam erased voluptua</a> </h3>
+											</header>
+											<div class="content-3lines-ellipsis">
+												<p>Maecenas sit amet bibendum velit. Sed vel nulla quis augue efficitur sagittis et in ex. Nam porttitor nibh orci, non blandit elit placerat a. Phasellus non augue vitae nisl eleifend lobortis. Nulla facilisi. Integer accumsan tempus orci non
+													efficitur. Mauris eu consequat enim, in commodo libero.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="post event-item side-item side-sm content-padding with_background">
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="item-media"> <img src="images/gallery-square/08.jpg" alt=""> <a class="abs-link" title="" href="event-single-right.html"></a> </div>
+									</div>
+									<div class="col-sm-7">
+										<div class="item-content">
+											<header class="entry-header">
+												<div class="entry-meta small-text">
+													<div class="grey"> <time datetime="2017-10-03T08:50:40+00:00">27 june, 2018  3:00 pm</time> </div>
+													<div class="highlight">232 Center St. Cupertino, CA 95014</div>
+												</div>
+												<h3 class="entry-title small"> <a href="event-single-right.html">Iudico Nusquam Principes Argumentum</a> </h3>
+											</header>
+											<div class="content-3lines-ellipsis">
+												<p>Maecenas sit amet bibendum velit. Sed vel nulla quis augue efficitur sagittis et in ex. Nam porttitor nibh orci, non blandit elit placerat a. Phasellus non augue vitae nisl eleifend lobortis. Nulla facilisi. Integer accumsan tempus orci non
+													efficitur. Mauris eu consequat enim, in commodo libero.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<div class="row topmargin_60">
+								<div class="col-sm-12 text-center">
+									<ul class="pagination">
+										<li><a href="#"><span class="sr-only">Prev</span><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#"><span class="sr-only">Next</span><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--eof .col-sm-8 (main content)-->
+						<!-- sidebar -->
+						<aside class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-4">
+							<div class="widget widget_apsc_widget">
+								<div class="apsc-icons-wrapper clearfix apsc-theme-4">
+									<div class="apsc-each-profile">
+										<a class="apsc-facebook-icon clearfix" href="#">
+											<div class="apsc-inner-block"> <span class="social-icon">
+						<i class="fa fa-facebook apsc-facebook"></i>
+						<span class="media-name">Facebook</span> </span> <span class="apsc-count">9.8K</span> </div>
+										</a>
+									</div>
+									<div class="apsc-each-profile">
+										<a class="apsc-twitter-icon clearfix" href="#">
+											<div class="apsc-inner-block"> <span class="social-icon">
+						<i class="fa fa-twitter apsc-twitter"></i>
+						<span class="media-name">Twitter</span> </span> <span class="apsc-count">4.9K</span> </div>
+										</a>
+									</div>
+									<div class="apsc-each-profile">
+										<a class="apsc-google-plus-icon clearfix" href="#">
+											<div class="apsc-inner-block"> <span class="social-icon">
+						<i class="apsc-googlePlus fa fa-google-plus"></i>
+						<span class="media-name">google+</span> </span> <span class="apsc-count">10.1M</span> </div>
+										</a>
+									</div>
+									<div class="apsc-each-profile">
+										<a class="apsc-instagram-icon clearfix" href="#">
+											<div class="apsc-inner-block"> <span class="social-icon">
+						<i class="apsc-instagram fa fa-instagram"></i>
+						<span class="media-name">Instagram</span> </span> <span class="apsc-count">4</span> </div>
+										</a>
+									</div>
+									<div class="apsc-each-profile">
+										<a class="apsc-youtube-icon clearfix" href="#">
+											<div class="apsc-inner-block"> <span class="social-icon">
+						<i class="apsc-youtube fa fa-youtube"></i>
+						<span class="media-name">Youtube</span> </span> <span class="apsc-count">2.2K</span> </div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="ds with_padding">
+								<div class="widget widget_search">
+									<h3 class="widget-title">Search</h3>
+									<form method="get" class="searchform" action="./">
+										<div class="form-group margin_0"> <label class="sr-only" for="widget-search">Search for:</label> <input id="widget-search" type="text" value="" name="search" class="form-control" placeholder="Search here"> <button type="submit" class="theme_button bg_button color2">Search</button>											</div>
+									</form>
+								</div>
+							</div>
+							<div class="with_background with_padding">
+								<div class="widget widget_categories">
+									<h3 class="widget-title">Categories</h3>
+									<ul class="greylinks">
+										<li> <a href="#">Financial</a> <span> 2 </span> </li>
+										<li> <a href="#">Corporate</a> <span> 4 </span> </li>
+										<li> <a href="#">Stock Market</a> <span> 6 </span> </li>
+										<li> <a href="#">Investment</a> <span> 8 </span> </li>
+										<li> <a href="#">Money</a> <span> 10 </span> </li>
+									</ul>
+								</div>
+							</div>
+							<div class="widget widget_instagram">
+								<h3 class="widget-title">Instagram</h3>
+								<div class="instafeed"> </div>
+							</div>
+							<div class="widget widget_tabs widget_theme_post_tabs small-tabs">
+								<h3 class="widget-title">Post Tabs</h3>
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs one-third-tabs" role="tablist">
+									<li class="active"><a href="#widget-tab4" role="tab" data-toggle="tab">Recent</a></li>
+									<li><a href="#widget-tab5" role="tab" data-toggle="tab">Popular</a></li>
+									<li><a href="#widget-tab6" role="tab" data-toggle="tab">Rated</a></li>
+								</ul>
+								<!-- Tab panes -->
+								<div class="tab-content top-color-border">
+									<div class="tab-pane fade in active" id="widget-tab4">
+										<article class="vertical-item">
+											<div class="item-media bottommargin_20"> <img src="images/gallery/01.jpg" alt=""> <a class="abs-link" title="" href="blog-single-left.html"></a> </div>
+											<div class="item-content">
+												<div class="entry-meta small-text highlgihtlinks"> <span class="date">
+										<a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">jun 15, 2018</time>
+										</a>
+	    							</span> </div>
+												<p class="darklinks"> <a href="blog-single-left.html">Tenderloin shankle prosciutto turducken strip.</a> </p>
+											</div>
+										</article>
+										<article class="vertical-item">
+											<div class="item-media bottommargin_20"> <img src="images/gallery/05.jpg" alt=""> <a class="abs-link" title="" href="blog-single-left.html"></a> </div>
+											<div class="item-content">
+												<div class="entry-meta small-text highlgihtlinks"> <span class="date">
+										<a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">jun 15, 2018</time>
+										</a>
+	    							</span> </div>
+												<p class="darklinks"> <a href="blog-single-left.html">T-bone pork loin tenderloin landjaeger salami.</a> </p>
+											</div>
+										</article>
+									</div>
+									<!-- eof tab -->
+									<div class="tab-pane fade" id="widget-tab5">
+										<article class="vertical-item">
+											<div class="item-media bottommargin_20"> <img src="images/gallery/02.jpg" alt=""> <a class="abs-link" title="" href="blog-single-left.html"></a> </div>
+											<div class="item-content">
+												<div class="entry-meta small-text highlgihtlinks"> <span class="date">
+										<a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">jun 15, 2018</time>
+										</a>
+	    							</span> </div>
+												<p class="darklinks"> <a href="blog-single-left.html">Tenderloin shankle prosciutto turducken strip.</a> </p>
+											</div>
+										</article>
+										<article class="vertical-item">
+											<div class="item-media bottommargin_20"> <img src="images/gallery/06.jpg" alt=""> <a class="abs-link" title="" href="blog-single-left.html"></a> </div>
+											<div class="item-content">
+												<div class="entry-meta small-text highlgihtlinks"> <span class="date">
+										<a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">jun 15, 2018</time>
+										</a>
+	    							</span> </div>
+												<p class="darklinks"> <a href="blog-single-left.html">T-bone pork loin tenderloin landjaeger salami.</a> </p>
+											</div>
+										</article>
+									</div>
+									<!-- eof tab -->
+									<div class="tab-pane fade" id="widget-tab6">
+										<article class="vertical-item">
+											<div class="item-media bottommargin_20"> <img src="images/gallery/03.jpg" alt=""> <a class="abs-link" title="" href="blog-single-left.html"></a> </div>
+											<div class="item-content">
+												<div class="entry-meta small-text highlgihtlinks"> <span class="date">
+										<a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">jun 15, 2018</time>
+										</a>
+	    							</span> </div>
+												<p class="darklinks"> <a href="blog-single-left.html">Tenderloin shankle prosciutto turducken strip.</a> </p>
+											</div>
+										</article>
+										<article class="vertical-item">
+											<div class="item-media bottommargin_20"> <img src="images/gallery/04.jpg" alt=""> <a class="abs-link" title="" href="blog-single-left.html"></a> </div>
+											<div class="item-content">
+												<div class="entry-meta small-text highlgihtlinks"> <span class="date">
+										<a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">jun 15, 2018</time>
+										</a>
+	    							</span> </div>
+												<p class="darklinks"> <a href="blog-single-left.html">T-bone pork loin tenderloin landjaeger salami.</a> </p>
+											</div>
+										</article>
+									</div>
+									<!-- eof tab -->
+								</div>
+								<!-- eof tab-content -->
+							</div>
+							<!-- eof widget -->
+							<div class="ds with_padding">
+								<div class="widget widget_mailchimp">
+									<h3 class="widget-title">Newsletter</h3>
+									<form class="signup" action="./" method="get">
+										<div class="form-group-wrap">
+											<div class="form-group"> <label for="mailchimp" class="sr-only">Enter your email here</label> <input name="email" type="email" id="mailchimp" class="mailchimp_email form-control" placeholder="Email Address"> <button type="submit" class="theme_button bg_button color2">Submit</button>												</div>
+										</div>
+										<div class="response"></div>
+									</form>
+								</div>
+							</div>
+							<div class="widget widget_twitter">
+								<h3 class="widget-title">Twitter</h3>
+								<div class="twitter"></div>
+							</div>
+						</aside>
+						<!-- eof aside sidebar -->
+					</div>
+				</div>
+			</section>
+			<section id="footer-subscribe" class="ds section_padding_top_90 section_padding_bottom_90">
+				<div class="container">
+					<div class="row flex-wrap v-center">
+						<div class="col-xs-12 col-md-6 text-center text-md-left">
+							<h2 class="section_header">Stay In Touch</h2>
+						</div>
+						<div class="col-xs-12 col-md-6 text-center">
+							<div class="widget widget_mailchimp">
+								<form class="signup" action="./" method="get">
+									<div class="form-group"> <input class="mailchimp_email form-control" name="email" type="email" placeholder="Email Address"> <button type="submit" class="theme_button">Subscribe</button> </div>
+									<div class="response"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer ls section_padding_top_110 section_padding_bottom_130 columns_margin_bottom_40 columns_padding_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-lg-3 text-center text-sm-left">
+							<div class="widget widget_about">
+								<div class="logo bottommargin_5"> <img src="images/logo-dark.png" alt=""> </div>
+								<p>With a community of over 400 million users (and a majority age group being 18 to 29), wouldn’t you want to make sure you’re monitoring what people are posting on social networks?</p>
+								<div class="page_social topmargin_25"> <a href="#" class="social-icon bg-icon rounded-icon socicon-linkedin"></a> <a href="#" class="social-icon bg-icon rounded-icon socicon-twitter"></a> <a href="#" class="social-icon bg-icon rounded-icon socicon-facebook"></a> <a href="#" class="social-icon bg-icon rounded-icon socicon-instagram"></a>									</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-lg-3 text-center text-sm-left">
+							<div class="widget widget_recent_entries">
+								<h3 class="widget-title">Latest Posts</h3>
+								<ul>
+									<li>
+										<p class="greylinks"> <a href="blog-single-left.html">WordPress Business Themes to Give Your Company A Boost</a> </p> <span class="entry-date small-text highlight">
+								<a href="blog-single-left.html">
+									<time class="entry-date" datetime="2017-03-13T08:50:40+00:00">
+										jun 19, 2017
+									</time>
+								</a>
+							</span> </li>
+									<li>
+										<p class="greylinks"> <a href="blog-single-left.html">15 Pro Industrial WordPress Themes Designed in 2016</a> </p> <span class="entry-date small-text highlight">
+								<a href="blog-single-left.html">
+									<time class="entry-date" datetime="2017-03-13T08:50:40+00:00">
+										jun 20, 2017
+									</time>
+								</a>
+							</span> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-lg-3 text-center text-sm-left">
+							<div class="widget widget_text">
+								<h3 class="widget-title">Head Office</h3>
+								<p class="bottommargin_15"> 4096 N Highland St, Arlington, MelbourneVA 32101, USA<br> <a href="mailto:#">example@example.com</a> <br> 800 1234 56 78 </p>
+								<p> Mon-Thu: 9:30 - 21:00 <br> Fri: 6:00 - 21:00 <br> Sat: 10:00 - 15:00 </p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-lg-3 text-center text-sm-left">
+							<div class="widget widget_nav_menu highlghtlinks">
+								<h3 class="widget-title">Quick Links</h3>
+								<ul class="menu">
+									<li> <a href="index.html">Home</a> </li>
+									<li> <a href="about.html">Pages</a> </li>
+									<li> <a href="services.html">Services</a> </li>
+									<li> <a href="blog-right.html">News</a> </li>
+									<li> <a href="gallery-regular-3-cols.html">Gallery</a> </li>
+									<li> <a href="contacts.html">Contacts</a> </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="page_copyright ds section_padding_top_15 section_padding_bottom_15">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<p>&copy; 2018 Eximgroup. All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/selectize.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--  -->
+</body>
+
+</html>

@@ -34,6 +34,22 @@
 /* Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
+    .about-text p{
+        text-align: center;
+    }
+
+    .contact-details{
+        margin: 0 auto;
+    }
+
+    #contact-form{
+        width: 100%;
+    }
+
+    .mainmenu{
+        float: right;
+    }
+
     #slide{
         display: none;
     }

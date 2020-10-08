@@ -1,0 +1,179 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .mainmenu .navbar-nav li a {
+        font-size: 12px;
+        padding: 20px 10px;
+    }
+    .is-sticky .mainmenu .navbar-nav li a {
+        padding: 20px 10px;
+    }
+    .logo {
+        text-align: center;
+    }
+    .single-logo {
+        margin-top: 30px;
+    }
+    .single-blog img {
+        width: 100%;
+    }
+    .pricing-box {
+        margin-top: 30px;
+    }
+    .welcome-image-area h2 {
+        font-size: 44px;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    #slide{
+        display: none;
+    }
+    #slide-mobile{
+        display: inline;
+    }
+    .logo {
+        padding-top: 20px;
+    }
+    .navbar-toggle .icon-bar {
+        background: #2AAFC0;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+        margin-top: -30px;
+    }
+    .navbar {
+        min-height: 0px;
+    }
+    .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+        color: #fff;
+    }
+    .mainmenu .navbar-nav li a:hover {
+        color: #2AAFC0;
+    }
+    .is-sticky .mainmenu .navbar-nav li a:hover {
+        color: #2AAFC0;
+    }
+    .is-sticky .mainmenu .navbar-nav li a {
+        color: #fff;
+    }
+    .is-sticky .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 420px;
+    }
+    .navbar-toggle {
+        margin-top: -34px;
+    }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+    .menu-bg .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+    .welcome-image-area,
+    .welcome-video-area {
+        padding-top: 120px;
+    }
+    .welcome-image-area h2,
+    .single-slide-item h2,
+    .welcome-video-area h2 {
+        font-size: 24px;
+    }
+    .single-logo {
+        margin-bottom: 20px;
+    }
+    a.slide-btn {
+        font-size: 14px;
+        padding: 5px;
+        width: 200px;
+        margin-bottom: 5px;
+    }
+    .section-title h2 {
+        font-size: 22px;
+    }
+    .section-title h2 span {
+        font-size: 30px;
+    }
+    .footer-social-link {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .pricing-box {
+        margin-top: 30px;
+    }
+    .single-testimonial {
+        padding: 0;
+    }
+    .header-top-information-area p {
+        text-align: center;
+    }
+    ul.header-social {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .welcome-image-area p {
+        padding: 0px;
+    }
+    .owl-theme .owl-controls {
+        display: none !important;
+    }
+    .get-text p {
+        padding: 0px;
+    }
+    .panel-title a {
+        font-size: 12px;
+    }
+    .work .filters li {
+        margin-bottom: 8px;
+    }
+    .single-footer {
+        margin-top: 30px;
+    }
+    .single-slide-item p {
+        padding: 0;
+    }
+    .welcome-slider-control {
+        font-size: 20px;
+        height: 30px;
+        width: 20px;
+        line-height: 31px;
+        padding-left: 5px;
+        left: 0;
+    }
+    .welcome-slider-control.right {
+        right: 0px;
+    }
+    .text-slider-control {
+        font-size: 20px;
+        height: 30px;
+        width: 20px;
+        line-height: 31px;
+        padding-left: 5px;
+        left: 0;
+    }
+    .text-slider-control.right {
+        right: 0px;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .single-logo {
+        margin-bottom: 20px;
+    }
+}
